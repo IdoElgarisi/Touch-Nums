@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Nums!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="header">
+        <h1>Touch Nums Game!</h1>
+        <hr>
+    </div>
+    <div class="radio-btn">
+        <label class="easy"><b>Easy</b>
+            <input type="radio" name="radio" onclick="getModalNums(16)" value="16">
+        </label>
+        <label class="hard"><b>Hard</b>
+            <input type="radio" name="radio" onclick="getModalNums(25)" value="25">
+        </label>
+        <label class="extreme"><b>Extreme</b>
+            <input type="radio" name="radio" onclick="getModalNums(36)" value="36">
+        </label>
+    </div>
+    <div>
+        <p class="stopwatch">Timer : <span>00.000</span></h5>
+        <h5 class="nextNum">Next Number : <span></span></p>
+    </div>
+    <table border="1" cellpadding="10" class="board">
+        <h1 class="level">Select Level Please</h1>
+    </table>
+
+    <button class="start" onclick="start()">New Game!</button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
